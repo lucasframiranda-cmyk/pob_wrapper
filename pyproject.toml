@@ -3,10 +3,10 @@ name = "pob_wrapper"
 version = "0.1.1"
 readme = "README.md"
 description = "Wrapper to control Path of Building"
-authors = ["coldino <antoranthony.purchase@gmail.com>"]
+authors = ["Lucas Miranda <lucasframiranda@gmail.com>"]
 license = "LGPL-3.0-or-later"
 keywords = ['pathofexile','pathofbuilding','pob']
-homepage = 'https://github.com/coldino/pob_wrapper/'
+homepage = "https://github.com/lucasframiranda-cmyk/pob_wrapper/"
 packages = [
     { include = "pob_wrapper" },
     { include = "tests", format = "sdist" },
