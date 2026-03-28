@@ -1,5 +1,7 @@
 # Path of Building Wrapper
 
+Fork of `coldino/pob_wrapper` with compatibility adjustments for newer Python/pywin32 environments.
+
 Allows use of an existing Path of Building installation from a Python application. If you don't know Path of Building is then you don't play Path of Exile and can safely ignore this.
 
 *This is simple initial implementation with limited functionality, but provides a base to build on.*
