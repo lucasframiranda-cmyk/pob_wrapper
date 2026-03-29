@@ -3,7 +3,7 @@
 Fork of `coldino/pob_wrapper` with compatibility adjustments for newer Python/pywin32 environments.
 
 -## Things to improve
--
+
 -* Detect where PoB was installed and/or where its data is (ProgramData).
 -* Provide access to more build & skill data
 +## Things to improve
