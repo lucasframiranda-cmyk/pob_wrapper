@@ -2,6 +2,24 @@
 
 Fork of `coldino/pob_wrapper` with compatibility adjustments for newer Python/pywin32 environments.
 
+-## Things to improve
+-
+-* Detect where PoB was installed and/or where its data is (ProgramData).
+-* Provide access to more build & skill data
++## Things to improve
++
++* Detect where PoB was installed and/or where its data is (ProgramData).
++* Provide access to more build & skill data
++
++## Compatibility note for newer PoB versions
++
++This fork fixes a runtime compatibility issue that affected newer `Path of Building Community` installs on Windows.
++
++The original wrapper bundled a `32-bit` LuaJIT runtime, while current PoB Community releases ship `64-bit` binaries such as `lcurl.dll`. That mismatch caused the wrapper to fail during startup with errors similar to `%1 is not a valid Win32 application`, sometimes surfacing indirectly through `DrawPopup`.
++
++This fork updates the bundled Lua runtime to `64-bit` and adds a small `mockui.lua` compatibility fix for `GetVirtualScreenSize()`. With those changes, the wrapper can boot correctly against modern `64-bit` PoB installations again.
+
+
 Allows use of an existing Path of Building installation from a Python application. If you don't know Path of Building is then you don't play Path of Exile and can safely ignore this.
 
 *This is simple initial implementation with limited functionality, but provides a base to build on.*
